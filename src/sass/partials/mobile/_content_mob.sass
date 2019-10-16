@@ -1,0 +1,139 @@
+.main
+    .box-mobile
+        display: block
+
+    .background-search
+        background: url('../img/mobile/bg-main.png') 0 10%/cover no-repeat
+        color: $colorWhite
+
+        .wrapper-search
+            height: 210px
+
+            .search_title
+                padding-bottom: 25px
+                text-align: center
+                font-size: 21px
+
+            .search-form
+                position: relative
+                margin-bottom: 25px
+                font-size: 15px
+
+                &__query
+                    height: 50px
+                    margin-right: 0
+                    padding: 0 10px
+                    font-size: 15px
+
+                &__btn
+                    display: none
+
+                &__icon-search-btn
+                    display: block
+                    +button-reset
+                    width: 30px
+                    position: absolute
+                    top: 50%
+                    right: 0
+                    width: 24px
+                    height: 24px
+                    transform: translate(-50%, -50%)
+                    background: url('../img/mobile/icon-search.png') 100% 0/cover no-repeat
+                    cursor: pointer
+
+            .search_desc
+                display: none              
+
+    .payments
+        padding-top: 30px
+
+        &_title
+            text-align: center
+
+            &__lg
+                display: none
+                font-size: 36px
+
+            &__sm
+                display: block
+                font-size: 21px
+
+        &_menu
+            display: none
+
+    .content
+        margin: 10px auto
+
+        .desc
+            width: 100%
+            margin: 0
+
+            &_title
+                margin-bottom: 0
+                font-size: 18px
+                   
+                .sm-screen-icon
+                    display: inline-block
+                    margin: 0 5px
+                    width: 40px
+                
+                .mob-menu__item
+                    flex-grow: 1
+
+                .arrow-close
+                    width: 8px
+                    height: 8px
+                    margin-right: 5px
+
+                    &::after
+                        content: ''
+                        position: absolute
+                        border: 4px solid transparent
+                        border-top: 8px solid $colorBlue
+                
+                
+                .arrow-open
+                    transform: rotate(180deg)
+
+            &_mob-menu
+                display: flex
+                align-items: center
+
+                .mob-menu__title
+                    border-bottom: 1px dotted $colorBlue!important
+                    color: $colorBlue
+
+            .wrap-text-content
+                display: none
+                margin-top: 10px
+
+            .wrap-text-content_desktop
+                display: none
+
+            .duties
+                margin-top: 0
+
+        .picture
+            display: none
+
+    .judicial-debts,
+    .registry
+        flex-direction: row
+
+        .desc
+            margin: 0
+
+    .partners
+        padding-top: 20px
+
+        .desc_title
+            font-size: 21px
+
+        .images
+            margin-top: 30px
+
+            &_item
+                width: 50%
+
+            &__title
+                margin-bottom: 30px

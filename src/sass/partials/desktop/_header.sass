@@ -1,0 +1,39 @@
+.header
+    position: sticky
+    top: 0
+    z-index: 10
+    height: 65px
+    border-bottom: 1px solid $borderColorGrayLight
+    background-color: $colorWhite
+
+    .wrapper-header
+        margin: auto 20px
+        height: 100%
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+        .btn-enter
+            +button-reset
+            width: 93px
+            height: 36px
+            border-radius: 0
+            border: 2px solid $colorBlue
+            background-color: $colorWhite
+            color: $colorBlue
+            font-size: 15px
+
+        .header-logo
+
+            &__desktop-img
+                display: inline
+
+            &__mobile-img
+                display: none
+
+        .header-help
+            color: $colorBlue
+            cursor: pointer
+
+        .header-mobile-humburger
+            display: none

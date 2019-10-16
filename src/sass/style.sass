@@ -1,0 +1,19 @@
+@import './colors'
+@import './fonts'
+@import './mixins'
+
+*
+	box-sizing: border-box
+	margin: 0
+	padding: 0
+
+body
+	font-family: $fontFamily
+	font-weight: normal
+	font-size: 15px
+	color: $colorBlack
+
+@import 'partials/main_desktop'
+
+@media ( min-width: 320px ) and ( max-width: 600px )
+	@import 'partials/main_mobile'

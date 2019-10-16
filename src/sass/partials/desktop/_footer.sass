@@ -1,0 +1,64 @@
+.footer
+    background-color: $bgColorGray
+
+    .wrapper-footer_lg
+        padding: 45px 0 40px 0
+        display: flex
+        justify-content: space-between
+
+        .footer-block
+            margin: 0 30px
+            width: 25%
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+
+            .copyright
+                line-height: 1.4
+
+            .footer-menu
+                margin: 0
+                padding: 0
+                list-style: none
+                line-height: 2
+
+                &__item-link:link,
+                &__item-link:visited,
+                &__item-link:hover
+                    text-decoration: none
+                    border-bottom: 1px solid $colorBlue
+                    color: $colorBlue
+
+            .contacts_phone
+                margin-bottom: 5px
+                line-height: 1.4
+                display: flex
+                flex-direction: column
+
+                &__number:link,
+                &__number:visited,
+                &__number:hover
+                    font-size: 24px
+                    color: $colorBlue
+
+                &__desc
+                    font-size: 12px
+
+            .sitelinks
+                text-align: right
+                line-height: 1.4
+
+                &_logo-firma2
+                    margin-top: 15px
+
+    .wrapper-footer_sm
+        display: none
+
+.share
+    width: 24px
+    height: 24px
+    position: fixed
+    top: 480px
+    right: 80px
+    cursor: pointer
+    color: $colorLightGray

@@ -1,0 +1,175 @@
+.share
+    width: 24px
+    height: 24px
+    position: fixed
+    top: 480px
+    right: 80px
+    cursor: pointer
+    color: $colorLightGray
+
+.main
+    width: 100%
+
+    .box
+        border-bottom: 1px solid $borderColorGrayLight
+    
+    .box-mobile
+        display: none
+
+    .background-search
+        background: url('../img/desktop/bg-main.jpg') 0 10%/cover no-repeat
+        color: $colorWhite
+
+        .wrapper-search
+            width: 100%
+            height: 360px
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+
+            .search_title
+                padding-bottom: 15px
+                align-self: normal
+                font-size: 36px
+                text-shadow: 0 0 1px $fontColorDarkGray
+
+            .search-form
+                width: 100%
+                margin-bottom: 15px
+                display: flex
+                font-size: 20px
+
+                &__query
+                    max-width: 100%
+                    height: 60px
+                    flex-grow: 1
+                    margin-right: 6px
+                    padding: 0 20px
+                    outline: none
+                    border: 0
+                    box-shadow: 0 0 2px 0 $bgColorGrayLight inset
+                    font-size: 20px
+
+                    +placeholder
+                        color: $fontColorDarkGray
+
+                &__btn
+                    width: 140px
+                    height: 60px
+                    color: $colorWhite
+                    background-color: $colorRed
+                    border: 1px solid $borderColorRed
+                    outline: none
+                    cursor: pointer
+                    font-size: 20px
+                
+                &__icon-search-btn
+                    display: none
+
+            .search_desc
+                align-self: normal
+                color: $fontColorGray                
+
+    .payments
+        width: 100%
+        padding-top: 50px
+        background-color: #fff
+
+        &_title
+            text-align: center
+
+            &__lg
+                font-size: 36px
+
+            &__sm
+                display: none
+                font-size: 21px
+
+        &_menu
+            margin: 35px auto
+            width: 650px
+            text-align: center
+            line-height: 1.5
+
+            &__item
+                white-space: nowrap
+                font-size: 18px
+                padding: 0 20px
+                display: inline-block
+
+                &-link:link,
+                &-link:visited,
+                &-link:hover
+                    text-decoration: none
+                    border-bottom: 1px dotted $colorBlue
+                    color: $colorBlue
+
+    .content
+        margin: 75px auto
+        display: flex
+
+        .desc
+            margin: 0 70px 0 0
+
+            &_title
+                margin-bottom: 30px
+                font-size: 24px                       
+                    
+                .sm-screen-icon
+                    display: none
+            
+            .duties
+                margin-top: 30px
+
+                .duties__link
+                    text-decoration: none
+                    border-bottom: 1px solid $colorBlue
+                    color: $colorBlue
+
+            .desc__text
+                line-height: 1.4
+
+            .desc__bonus
+                margin-top: 30px
+                margin-bottom: 10px
+                text-transform: uppercase
+                letter-spacing: 1px
+                font-size: 12px
+                font-weight: bold
+                color: $colorRed
+
+    .judicial-debts,
+    .registry
+        flex-direction: row-reverse
+
+        .desc
+            margin: 0 0 0 50px
+
+    .partners
+        flex-direction: column
+        margin-bottom: 60px
+
+        .desc_title
+            text-align: center
+            font-size: 24px
+
+        .images
+            margin-top: 45px
+            display: flex
+            justify-content: space-between
+            font-size: 12px
+            font-weight: bold
+            flex-wrap: wrap
+
+            &_item
+                width: 16%
+                text-align: center
+
+                &__wrap-img
+                    width: 100%
+                    height: 90px
+                    margin-bottom: 25px
+                    display: flex
+                    justify-content: center
+                    align-items: center

@@ -1,0 +1,68 @@
+.header
+    height: 40px
+
+    .wrapper-header
+        margin: auto 10px
+
+        .header-button
+            display: none
+            
+        .header-logo__desktop-img
+            display: none
+
+        .header-logo__mobile-img
+            display: inline
+
+        .header-help
+            display: none
+
+        .header-mobile-humburger
+            display: block
+            position: relative
+            height: 20px
+            width: 20px
+            color: $colorBlue
+            cursor: pointer
+
+            &:hover .dropdown
+                opacity: 1
+                visibility: visible
+
+            .humburger__menu
+                position: absolute
+                top: 8.5px
+                left: 0
+                display: inline-block
+                width: 20px
+                height: 3px
+                background: $colorBlue
+                cursor: pointer
+
+                &::after,
+                &::before
+                    content: ''
+                    position: absolute
+                    width: 20px
+                    height: 3px
+                    background: $colorBlue
+
+                &::after
+                    top: -6px
+
+                &::before
+                    top: 6px
+
+            .humburger__open-menu
+                background: none
+
+                &::after,
+                &::before
+                    top: 0
+                    width: 20px
+
+                &::after
+                    transform: rotate(45deg)
+
+                &::before
+                    transform: rotate(-45deg)
+                    

@@ -1,0 +1,22 @@
+.modal
+    &_content
+        position: fixed
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        max-width: calc(100% - 40px)
+        height: 475px
+        padding: 40px
+        margin: auto
+        z-index: 15
+        background-color: $colorWhite
+
+        .modal_btn-close
+            right: 10px
+            top: 10px
+
+            &:after,
+            &:before
+                width: 20px
+                left: 0
+                border-top: 2px solid $colorBlack

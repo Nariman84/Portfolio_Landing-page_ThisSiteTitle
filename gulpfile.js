@@ -79,7 +79,7 @@ function compileSassToCss() {
 			cascade: false
 		}))
 		.pipe(rename({ suffix: '.min' }))
-		// .pipe(cleanCSS())
+		.pipe(cleanCSS())
 		.pipe(gulp.dest(path.public.css))
 		.pipe(browserSync.reload({ stream: true }));
 
